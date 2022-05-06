@@ -33,8 +33,8 @@ export const ruLang = [
     "Del",
   ],
   ["CapsLock", "ф", "ы", "в", "а", "п", "р", "о", "л", "д", "ж", "э", "Enter"],
-  ["Shift", "я", "ч", "c", "м", "и", "т", "ь", "б", "ю", ".", "⇑", "shift"],
-  ["Ctrl", , "Alt", "SPACE", "CtrlR", "⇐", "⇓", "⇒"],
+  ["Shift", "я", "ч", "c", "м", "и", "т", "ь", "б", "ю", ".", "⇑"],
+  ["Ctrl", "Alt", "SPACE", "CtrlR", "⇐", "⇓", "⇒"],
 ];
 
 export const engLang = [
@@ -72,8 +72,8 @@ export const engLang = [
     "Del",
   ],
   ["CapsLock", "a", "s", "d", "f", "g", "h", "j", "k", "l", ";", "'", "Enter"],
-  ["Shift", "z", "x", "c", "v", "b", "n", "m", ",", ".", "/", "⇑", "Shift"],
-  ["Ctrl", "Win", "Alt", "SPACE", "Alt", "Ctrl", "⇐", "⇓", "⇒"],
+  ["Shift", "z", "x", "c", "v", "b", "n", "m", ",", ".", "/", "⇑"],
+  ["Ctrl", "Alt", "SPACE", "CtrlR", "⇐", "⇓", "⇒"],
 ];
 
 export const ruLangCaps = [
@@ -111,8 +111,8 @@ export const ruLangCaps = [
     "Del",
   ],
   ["CapsLock", "Ф", "Ы", "В", "А", "П", "Р", "О", "Л", "Д", "Ж", "Э", "Enter"],
-  ["Shift", "Я", "Ч", "С", "М", "И", "Т", "Ь", "Б", "Ю", ",", "⇑", "shift"],
-  ["Ctrl", "Win", "Alt", "SPACE", "Alt", "Ctrl", "⇐", "⇓", "⇒"],
+  ["Shift", "Я", "Ч", "С", "М", "И", "Т", "Ь", "Б", "Ю", ",", "⇑"],
+  ["Ctrl", "Alt", "SPACE", "CtrlR", "⇐", "⇓", "⇒"],
 ];
 
 export const engLangCaps = [
@@ -150,6 +150,6 @@ export const engLangCaps = [
     "Del",
   ],
   ["CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ":", '"', "Enter"],
-  ["Shift", "Z", "X", "C", "V", "B", "N", "M", "<", ">", "?", "⇑", "shift"],
-  ["Ctrl", "Win", "Alt", "SPACE", "Alt", "Ctrl", "⇐", "⇓", "⇒"],
+  ["Shift", "Z", "X", "C", "V", "B", "N", "M", "<", ">", "?", "⇑"],
+  ["Ctrl", "Alt", "SPACE", "CtrlR", "⇐", "⇓", "⇒"],
 ];

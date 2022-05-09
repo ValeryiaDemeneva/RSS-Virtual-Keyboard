@@ -4,10 +4,19 @@ let language = localStorage.getItem("lang") || "ru";
 let textValue = "";
 const body = document.querySelector("body");
 const container = document.createElement("div");
+container.classList.add("container");
 body.append(container);
 const textArea = document.createElement("textarea");
+
 textArea.value = textValue;
 container.append(textArea);
+const textAfter = document.createElement("div");
+textAfter.innerHTML = 'For Langue '
+textAfter.classList.add("textAfter");
+container.append(textAfter);
+
+
+
 
 const onAddClick = (button) => {
   const { innerHTML: text } = button;
@@ -156,6 +165,9 @@ const onKeyUpButton = (event) => {
       .classList.remove("active");
   } else if (code === "Enter") {
     textValue += "\n";
+    document
+      .querySelector("div[data-key='" + "\n" + "']")
+      .classList.remove("active");
   } else if (code === "CapsLock") {
     if (language === "ru") {
       onRenderKeyboard(ruLangCaps);
@@ -175,17 +187,14 @@ const onKeyUpButton = (event) => {
       localStorage.setItem("lang", "en");
     }
   } else if (code === "ArrowUp") {
-    textValue += "⇑";
     document
       .querySelector("div[data-key='" + "⇑" + "']")
       .classList.remove("active");
   } else if (code === "ArrowDown") {
-    textValue += "⇓";
     document
       .querySelector("div[data-key='" + "⇓" + "']")
       .classList.remove("active");
   } else if (code === "ArrowLeft") {
-    textValue += "⇐";
     document
       .querySelector("div[data-key='" + "⇐" + "']")
       .classList.remove("active");
@@ -211,7 +220,6 @@ const onKeyUpButton = (event) => {
       .querySelector("div[data-key='" + "Shift" + "']")
       .classList.remove("active");
   } else if (code === "ArrowRight") {
-    textValue += "⇒";
     document
       .querySelector("div[data-key='" + "⇒" + "']")
       .classList.remove("active");
@@ -299,6 +307,10 @@ const onKeyDownButton = (event) => {
     textValue += " ";
     document
       .querySelector("div[data-key='" + "SPACE" + "']")
+      .classList.add("active");
+  } else if (code === "Enter") {
+    document
+      .querySelector("div[data-key='" + "\n" + "']")
       .classList.add("active");
   } else if (code === "AltLeft") {
     event.preventDefault();

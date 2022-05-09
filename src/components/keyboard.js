@@ -11,7 +11,7 @@ const textArea = document.createElement("textarea");
 textArea.value = textValue;
 container.append(textArea);
 const textAfter = document.createElement("div");
-textAfter.innerHTML = 'For Langue '
+textAfter.innerHTML = 'To switch the language on the keyboard, press the CtrlLeft key or use the mouse CtrlR'
 textAfter.classList.add("textAfter");
 container.append(textAfter);
 
